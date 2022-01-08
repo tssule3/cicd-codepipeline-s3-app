@@ -36,9 +36,9 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     autoWatch: true,
-    browsers: ['ChromeHeadless'],
+    browsers: ['ChromiumHeadlessNoSandbox'],
     customLaunchers:{
-      HeadlessChrome:{
+      ChromiumHeadlessNoSandbox:{
         base: 'ChromeHeadless',
         flags: ['--no-sandbox']
       }
