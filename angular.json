@@ -99,9 +99,21 @@
             "scripts": [],
             "codeCoverage": true
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "cicd-codepipeline-s3-app"
+  "defaultProject": "cicd-codepipeline-s3-app",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

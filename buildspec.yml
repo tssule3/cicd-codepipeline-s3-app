@@ -20,6 +20,7 @@ phases:
   pre_build:
     commands:
         - echo Testing started
+        - ng lint
         - ng test      
 artifacts:
     files:
